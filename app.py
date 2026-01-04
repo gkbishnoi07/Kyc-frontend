@@ -17,7 +17,11 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=[
+        "https://rider.theozu.com",
+        "http://localhost:3000",  # Keep for local development
+        "http://localhost:5173"   # Keep for local development
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
