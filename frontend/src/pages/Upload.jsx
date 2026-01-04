@@ -28,7 +28,7 @@ export default function Upload() {
     Object.keys(files).forEach((k) => formData.append(k, files[k]));
 
     try {
-      const res = await fetch("http://localhost:8000/kyc/verify", {
+      const res = await fetch("https://kyc-service-backend.onrender.com/kyc/verify", {
         method: "POST",
         body: formData,
       });
