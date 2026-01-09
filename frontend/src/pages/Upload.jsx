@@ -68,13 +68,7 @@ export default function Upload() {
             </div>
           </div>
 
-          <button
-            onClick={() => navigate("/profile")}
-            className="ai-profile-btn"
-            aria-label="Profile"
-          >
-            <img src="/assets/icons/ava2.png" alt="Profile" className="ai-profile-img" />
-          </button>
+         
         </div>
       </header>
 
@@ -177,3 +171,4 @@ export default function Upload() {
     </div>
   );
 }
+
